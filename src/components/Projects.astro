@@ -1,0 +1,45 @@
+---
+import Cards from "./Projects.Cards.astro";
+---
+
+<div
+  class="bg-slate-900 text-white flex justify-center items-center px-2 p-3 text-2xl"
+>
+  <h2>Projects</h2>
+</div>
+<div
+  class="grid grid-cols-1 md:grid-cols-2 gap-4 bg-slate-900 overflow-x-hidden"
+>
+  <Cards
+    titulo={"Pokedux"}
+    img={"pokeball.png"}
+    link="https://danielojeda25.github.io/Pokedux/"
+    color="violet"
+    medidas="w-full"
+    text=" Pokedux, practice project, based on React & React Redux."
+  />
+  <Cards
+    titulo={"Logicap"}
+    img={"Logicap.svg"}
+    link="https://www.logicap.com.ar/"
+    color="blue"
+    medidas="w-full"
+    text="Small personal venture, to provide platform development services to different clients."
+  />
+  <Cards
+    titulo={"Bamana Store"}
+    img={"bmn.png"}
+    medidas="w-full"
+    link="https://www.bamana.com.ar/"
+    color="gray"
+    text="Bamana,maintenance of the local wholesale store portal, based on React, Nodejs and services."
+  />
+  <Cards
+    titulo={"Utrack"}
+    img={"utrack.png"}
+    medidas="w-full"
+    link="http://www.utrack.com.ar/"
+    color="orange"
+    text="Utrack, bus services platform for a private company, based on React,Sockets, React Router and Redux."
+  />
+</div>
