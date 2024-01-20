@@ -1,45 +1,45 @@
 ---
-import Cards from "./Projects.Cards.astro";
+import Details from "./Projects.Details.astro";
 ---
 
 <div
   class="bg-slate-900 text-white flex justify-center items-center px-2 p-3 text-2xl"
 >
-  <h2 class="border-b-2 w-1/4 text-center py-3">Projects</h2>
+  <h2 class="border-b-2 w-1/4 text-center py-3 animate__animated animate__tada">
+    Projects
+  </h2>
 </div>
 <div
-  class="grid grid-cols-1 md:grid-cols-2 gap-4 bg-slate-900 overflow-x-hidden overflow-y-hidden"
+  class="w-full flex flex-wrap gap-4 justify-center items-center bg-slate-900 overflow-x-hidden overflow-y-hidden py-6"
 >
-  <Cards
-    titulo={"Pokedux"}
-    img={"pokeball.png"}
+  <Details
+    titulo="Pokedux"
+    text="Pokedux is a React, Tailwind CSS, and React Redux Toolkit-based practice project that replicates a Pokedex. It allows users to efficiently search and explore Pokémon, combining modern styling with interactive features. Discover the captivating world of Pokémon through a seamless and responsive user interface crafted with cutting-edge web development technologies."
     link="https://danielojeda25.github.io/Pokedux/"
-    color="violet"
-    medidas="w-full"
-    text=" Pokedux, practice project, based on React & React Redux."
+    img={"poke.svg"}
   />
-  <Cards
-    titulo={"Logicap"}
+  <Details
+    titulo="Logicap"
+    text="Small personal venture, to provide platform development services to different clients made with Astro."
+    link="https://aktiva-two.vercel.app/"
     img={"Logicap.svg"}
-    link="https://www.logicap.com.ar/"
-    color="blue"
-    medidas="w-full"
-    text="Small personal venture, to provide platform development services to different clients."
   />
-  <Cards
-    titulo={"Bamana Store"}
-    img={"bmn.png"}
-    medidas="w-full"
+  <Details
+    titulo="Bamana Store"
+    text="Bamana, maintenance of the local wholesale store portal, based on React, Nodejs and services."
     link="https://www.bamana.com.ar/"
-    color="gray"
-    text="Bamana,maintenance of the local wholesale store portal, based on React, Nodejs and services."
+    img={"bmn.png"}
   />
-  <Cards
-    titulo={"Utrack"}
-    img={"utrack.png"}
-    medidas="w-full"
+  <Details
+    titulo="Utrack"
+    text="Utrack, bus services platform for a private company, based on React, Sockets, React Router and Redux."
     link="http://www.utrack.com.ar/"
-    color="orange"
-    text="Utrack, bus services platform for a private company, based on React,Sockets, React Router and Redux."
+    img={"utrack.png"}
+  />
+  <Details
+    titulo="SMM MATRIX"
+    text="Website, for the purpose of selling and buying followers, likes or reactions on social media, Made with react, redux, tailwindcss, Flowbite UI."
+    link="https://smm-mocha.vercel.app/"
+    img={"smm.ico"}
   />
 </div>

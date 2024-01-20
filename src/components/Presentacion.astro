@@ -1,45 +1,100 @@
 <section class="bg-slate-900" id="presentacion">
   <div class="px-4 mx-auto max-w-screen-xl text-center py-24">
-    <h1
-      class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl"
-    >
-      Hello World, I'm Daniel Ojeda!
-    </h1>
-    <p
-      class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48"
-    >
-      I am a frontend web developer, specialized in React and its ecosystem, I
-      have worked in private projects, work with development teams and my goal
-      is growth in knowledge and obtaining a better life.
-    </p>
-    <div
-      class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0"
-    >
-      <a
-        href="#projects"
-        class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
-        >Projects
-        <svg
-          class="w-3.5 h-3.5 ms-2 rtl:rotate-180"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 14 10"
-        >
-          <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M1 5h12m0 0L9 1m4 4L9 9"></path>
-        </svg>
-      </a>
-      <a
-        href="#footer"
-        class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400"
+    <div class="bg-slate-900 text-white px-4 py-8">
+      <!-- Título principal -->
+      <h1
+        class="text-4xl font-extrabold text-center mb-4 animate__animated animate__bounce"
       >
-        Contact Me
-      </a>
+        Hello World, I'm Daniel Ojeda!
+      </h1>
+
+      <!-- Contenedor de la sección de texto e imagen -->
+      <div
+        class="flex flex-col md:flex-row border rounded-xl justify-center items-center"
+      >
+        <!-- Sección de texto mejorada -->
+        <!-- Sección de texto mejorada -->
+        <p
+          class="my-8 text-2xl font-normal text-gray-300 md:w-1/2 md:pr-8 lg:text-xl text-justify animate__animated animate__fadeIn"
+        >
+          I am a frontend web developer with expertise in leading technologies
+          such as React, Tailwind CSS, Redux, and Git. My experience includes
+          successful contributions to private projects and collaborative
+          development environments. Focused on delivering high-quality and
+          user-centric solutions, I thrive in dynamic and challenging projects.
+          My commitment to continuous learning and professional growth drives me
+          to stay at the forefront of the ever-evolving field of web
+          development.
+        </p>
+
+        <!-- Imagen -->
+        <img
+          src="logo.png"
+          alt="Descripción de la imagen"
+          class="w-full md:w-1/5 md:rounded-lg"
+        />
+      </div>
+
+      <!-- Enlaces de la sección -->
+      <div
+        class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 mt-4"
+      >
+        <!-- Enlace a Projects -->
+        <a
+          href="#projects"
+          class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+        >
+          Projects
+          <svg
+            class="w-3.5 h-3.5 ms-2 rtl:rotate-180"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 14 10"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+          </svg>
+        </a>
+
+        <!-- Enlace a Contact Me -->
+        <a
+          href="#footer"
+          class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400"
+        >
+          Contact Me
+        </a>
+      </div>
     </div>
   </div>
 </section>
+
+<style>
+  img {
+    --c: #041261; /* the border color */
+    --b: 10px; /* the border thickness*/
+    --g: 5px; /* the gap on hover */
+
+    padding: calc(var(--g) + var(--b));
+    --_g: #0000 25%, var(--c) 0;
+    background:
+      conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g))
+        var(--_i, 200%) 0 /200% var(--_i, var(--b)) no-repeat,
+      conic-gradient(at bottom var(--b) left var(--b), var(--_g)) 0
+        var(--_i, 200%) / var(--_i, var(--b)) 200% no-repeat;
+    transition:
+      0.3s,
+      background-position 0.3s 0.3s;
+    cursor: pointer;
+  }
+  img:hover {
+    --_i: 100%;
+    transition:
+      0.3s,
+      background-size 0.3s 0.3s;
+  }
+</style>

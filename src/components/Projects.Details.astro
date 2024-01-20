@@ -1,0 +1,37 @@
+---
+const { titulo, link, img, text } = Astro.props;
+---
+
+<details
+  class="border border-gray-200 bg-slate-700 rounded-lg shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 p-4 w-1/2"
+>
+  <summary class="cursor-pointer">
+    <div class="flex items-center justify-between">
+      <h3 class="text-xl font-semibold">{titulo}</h3>
+      <img src={img} alt="" class="w-8 h-8 rounded-full" />
+    </div>
+  </summary>
+  <div class="mt-4">
+    <p class="text-gray-300">{text}</p>
+    <a
+      href={link}
+      class="inline-flex justify-center items-center py-2 px-4 text-base font-medium text-white bg-blue-500 hover:bg-blue-800 rounded-full border border-blue-500 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 mt-4"
+    >
+      View Project
+      <svg
+        class="w-3.5 h-3.5 ms-2 rtl:rotate-180"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 14 10"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+      </svg>
+    </a>
+  </div>
+</details>
